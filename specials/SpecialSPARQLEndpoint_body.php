@@ -11,7 +11,7 @@ class SPARQLEndpoint extends SpecialPage {
 	// TODO: Really keep the below ones as class variables?    
 
 	function __construct() {
-	    parent::__construct( 'SPARQLEndpoint' );
+	   parent::__construct( 'SPARQLEndpoint' );
 	    # Set up some stuff
 	    $this->sparqlendpointconfig = $this->getSPARQLEndpointConfig();
 	    $this->sparqlendpoint = ARC2::getStoreEndpoint( $this->sparqlendpointconfig );
